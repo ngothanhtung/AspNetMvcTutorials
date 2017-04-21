@@ -1,0 +1,16 @@
+﻿@model IEnumerable<AspNetMvcTutorials.Models.Product>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul class="list-group">
+    @foreach (var p in Model)
+    {
+        <li class="list-group-item">
+            @p.Name
+        </li>
+    }
+
+</ul>

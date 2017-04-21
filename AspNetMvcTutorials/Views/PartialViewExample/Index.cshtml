@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";    
+}
+
+<h2>Index</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <!--METHOD 1-->
+        @Html.Partial("_MenuPartial")
+
+        <!--METHOD 2-->
+        @{
+            Html.RenderPartial("_MenuPartial");
+        }
+
+        <!--METHOD 3-->
+        @Html.Action("MenuPartial")
+
+
+        <!--METHOD 4-->
+        @{
+            Html.RenderAction("MenuPartial");
+        }
+    </div>
+    <div class="col-md-8"></div>
+</div>

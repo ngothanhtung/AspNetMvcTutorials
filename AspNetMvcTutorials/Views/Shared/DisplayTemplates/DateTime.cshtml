@@ -1,0 +1,13 @@
+﻿@model DateTime?
+@{
+    if (Model?.Year > 1900)
+    {
+        <span>
+            @Model.Value.ToString("yyyy-MM-dd")
+        </span>
+    }
+    else
+    {
+        <span>unknown</span>
+    }
+}

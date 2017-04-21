@@ -1,0 +1,38 @@
+﻿@model AspNetMvcTutorials.Models.User
+@{
+    ViewBag.Title = "Display Template";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<h3>DISPLAY TEMPLATES</h3>
+@*<p>
+    @Html.DisplayForModel("DateTime")
+</p>*@
+<p>
+    @Html.DisplayFor(x => Model.DateOfBirth, "DateTime")
+</p>
+@*<p>
+    @Html.DisplayForModel()
+</p>*@
+
+<p>
+    @Html.DisplayFor(x => Model.DateOfBirth)
+</p>
+
+<hr />
+
+<h3>EDIT TEMPLATES</h3>
+@*<p>
+    @Html.EditorForModel("DateTime")
+</p>*@
+<p>
+    @Html.EditorFor(x => Model.DateOfBirth) // Không cần chỉ rõ, mặc định lấy Editor template
+</p>
+@*<p>
+        @Html.EditorForModel()
+    </p>
+*@
+<p>
+    @Html.EditorFor(x => Model.DateOfBirth, "DateTime") // Chỉ rõ tên template
+</p>

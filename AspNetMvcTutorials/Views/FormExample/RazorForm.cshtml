@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Razor Form";
+}
+
+@using (Html.BeginForm("Search", "Form", FormMethod.Get))
+{
+    @Html.TextBox("q")
+    <input type="submit" value="Search" />
+}

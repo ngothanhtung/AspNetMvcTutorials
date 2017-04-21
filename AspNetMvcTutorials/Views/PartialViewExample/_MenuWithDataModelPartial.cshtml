@@ -1,0 +1,13 @@
+﻿@model IEnumerable<AspNetMvcTutorials.Controllers.MenuItem>
+
+<ul class="list-group">
+
+    @{
+        foreach (var item in Model)
+        {
+            <li class="list-group-item">
+                <a href="@item.Link">@item.Title</a>
+            </li>
+        }
+    }
+</ul>

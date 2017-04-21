@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+
+   
+    Func<dynamic, object> strongTemplate = @<strong>@item</strong>;
+
+}
+
+<h2>Index</h2>
+
+<p>
+    @strongTemplate("This is bold text")
+</p>

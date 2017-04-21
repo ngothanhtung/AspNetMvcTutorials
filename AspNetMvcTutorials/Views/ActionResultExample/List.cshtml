@@ -1,0 +1,13 @@
+﻿@model List<AspNetMvcTutorials.Controllers.Employee>
+@{
+    ViewBag.Title = "FirstAction";
+}
+
+<h2>FirstAction</h2>
+@{
+    foreach (var student in Model)
+    {
+        <div>@student.Id : @student.Name</div>
+    }
+}
+

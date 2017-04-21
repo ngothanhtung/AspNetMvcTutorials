@@ -1,0 +1,11 @@
+﻿@model AspNetMvcTutorials.Controllers.DropDownListViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>DropDownList Basic</h2>
+
+@using (Html.BeginForm("Index", "DropDownList", FormMethod.Post, new { id = "register-form", role = "form" }))
+{
+    @Html.DropDownListFor(m => Model.City, null, new { @class = "form-control" })
+}
